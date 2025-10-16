@@ -21,7 +21,7 @@ public class VariablesAndConstants {
         System.out.println(year);
 
         // Constantes
-                
+
         final String EMAIL = "cportuon@gmail.com";
         // EMAI = "cosmeportubar@gmail.com"; Es constante
         System.out.println(EMAIL);

@@ -71,5 +71,5 @@ public class OperatorsExercises {
             System.out.println((a + 1) == 1 && a <= 5 );
     }
 
-    
+
 }

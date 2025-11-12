@@ -6,35 +6,37 @@ public class TareaCondicionales2 {
     public static void main(String[] args){
         
         Scanner sc = new Scanner(System.in);
-        System.out.println("Introduce el primer número:");
+        
+        System.out.println("\nIntroduce un número:");
         int num1 = sc.nextInt();
-        System.out.println("Introduce el segundo número:");
+        
+        System.out.println("Introduce otro número:");
         int num2 = sc.nextInt();
         
         int mayor;
         int menor;
         
-        if (num1 < num2)
-        {
+        if (num1 < num2){
             menor = num1;
         }
         else menor = num2;
+        
         if (num1 > num2)
         {
             mayor = num1;
         }
         else mayor = num2;
         
-        System.out.println("El número: " + mayor + " es mayor que el número " + menor);
-        System.out.println("El número: " + menor + " es menor que el número " + mayor);
+        System.out.println("\nEl número: " + mayor + " es mayor que el número " + menor);
+        System.out.println("\nEl número: " + menor + " es menor que el número " + mayor);
         
-        System.out.println("Introduce otro número:");
+        System.out.println("\nIntroduce otro número:");
         int num3 = sc.nextInt();
         
         if (num3 % 2 == 0){
-            System.out.println("El número es par");
+            System.out.println("\nEl número es par");
         }
-        else System.out.println("El número es impar");
+        else System.out.println("\nEl número es impar");
     }
     
 }

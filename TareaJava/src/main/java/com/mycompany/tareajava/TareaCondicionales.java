@@ -17,6 +17,7 @@ public class TareaCondicionales {
         int mayor;
         int menor;
         
+        // Buscar el número mayor
         if ((num1 >= num2) && (num1 >= num3)){
             mayor = num1;
         }
@@ -24,6 +25,8 @@ public class TareaCondicionales {
             mayor = num2;
         }
         else mayor = num3;
+        
+        // Buscar el número menor
         
         if ((num1 <= num2) && (num1 <= num3)){
             menor = num1;

@@ -27,8 +27,8 @@ public class TareaCondicionales2 {
         }
         else mayor = num2;
         
-        System.out.println("\nEl número: " + mayor + " es mayor que el número " + menor);
-        System.out.println("\nEl número: " + menor + " es menor que el número " + mayor);
+        System.out.println("\nEl número " + mayor + " es mayor que el número " + menor);
+        System.out.println("\nEl número " + menor + " es menor que el número " + mayor);
         
         System.out.println("\nIntroduce otro número:");
         int num3 = sc.nextInt();

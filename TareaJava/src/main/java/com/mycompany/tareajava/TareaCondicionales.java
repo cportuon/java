@@ -5,16 +5,17 @@ public class TareaCondicionales {
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
-        System.out.println("\n------------------------------------------------------------------------");
-        System.out.println("\nVamos a comparar 3 números");
+        System.out.println("\n---------------------Vamos a comparar 3 números-------------------------");
         System.out.println("\nIntroduce el primer número:");
         int num1 = sc.nextInt();
         
+        Scanner sc2 = new Scanner(System.in);
         System.out.println("\nIntroduce el segundo número:");
-        int num2 = sc.nextInt();
+        int num2 = sc2.nextInt();
         
+        Scanner sc3 = new Scanner(System.in);
         System.out.println("\nIntroduce el tercer número:");
-        int num3 = sc.nextInt();
+        int num3 = sc3.nextInt();
         
         int mayor, menor;
         

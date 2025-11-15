@@ -5,9 +5,9 @@ public class CreacionVariables
     public static void main(String[] args)
     {    
         // Tipos enteros       
-        byte b = 2;             // Entero pequeño con signo
-        short s = 3;            // Entero corto con signo
-        int num = 5;            // Opción por defecto para valores enteros
+        byte b = 127;             // Entero pequeño con signo
+        short s = 32767;            // Entero corto con signo
+        int num = 2147483647;            // Opción por defecto para valores enteros
         long l = 2147483648L;   // Entero largo con signo, usado cuando int no es suficiente
         
         // Tipos reales

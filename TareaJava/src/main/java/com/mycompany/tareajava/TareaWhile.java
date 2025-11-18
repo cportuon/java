@@ -11,11 +11,10 @@ public class TareaWhile {
         int suma = 0;
         
         while(valor >= 0){
-           
-            System.out.println("Introduce un número entero positivo:");
-            valor  = sc.nextInt();
             suma = suma + valor;
             System.out.println("Suma de los valores: " + suma);
+            System.out.println("Introduce un número entero positivo:");
+            valor  = sc.nextInt();
         }
     }
 }

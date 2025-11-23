@@ -8,7 +8,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>24</maven.compiler.release>
-        <exec.mainClass>com.mycompany.creacionvariables.CreacionVariables</exec.mainClass>
+        <exec.mainClass>com.mycompany.tareajava.TareaJava</exec.mainClass>
     </properties>
-    <name>TareaJava</name>
 </project>

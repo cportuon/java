@@ -1,19 +1,39 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Other/File.java to edit this template
- */
-package com.mycompany.tareajava;
 
-/**
- *
- * @author cosisi
- */
+package com.mycompany.tareajava;
+import java.util.Scanner;
+
 public class bucleV {
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String args[]) {
-        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+        int opcion;
+        
+        
+        System.out.println("1. Agregar nuevo libro.");
+        System.out.println("2. Mostrar todos los libros.");
+        System.out.println("3. Buscar libro por título.");
+        System.out.println("4. Salir.");
+        System.out.println("Elije la opción que desees: ");
+        opcion = sc.nextInt();
+        
+        do{
+            if(opcion == 1){
+                
+            }
+            if(opcion == 2){
+            
+            }
+            if(opcion == 3){
+            
+            }
+            if(opcion != 1 && opcion != 2 && opcion != 3 && opcion != 4){
+                System.out.println("ERROR. Introduce de nuevo la opcion deseada.");
+            }
+               
+        }while(opcion == 4);
+        
+        
+        
     }
 }

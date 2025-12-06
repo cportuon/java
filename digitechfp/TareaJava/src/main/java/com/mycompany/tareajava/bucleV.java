@@ -1,14 +1,15 @@
 
 package com.mycompany.tareajava;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class bucleV {
 
    
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        int opcion;
         
+        /*Scanner sc = new Scanner(System.in);
+        int opcion;
         
         System.out.println("1. Agregar nuevo libro.");
         System.out.println("2. Mostrar todos los libros.");
@@ -31,9 +32,16 @@ public class bucleV {
                 System.out.println("ERROR. Introduce de nuevo la opcion deseada.");
             }
                
-        }while(opcion == 4);
+        }while(opcion != 4);*/
         
+        String[][] numerosMatriz2 = {{"cosme","tito"},{"alberto","aitor"},{"naia","ana"}};
         
+        for(int i=0; i < (numerosMatriz2[i].length) + 1; i++){
+            for (int j=0; j < numerosMatriz2[i].length; j++){
+                System.out.println(numerosMatriz2[i][j] + " ");
+            }
+            System.out.println();
+        }
         
     }
 }

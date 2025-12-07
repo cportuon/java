@@ -38,40 +38,69 @@
                     System.out.println();
 
                     System.out.println("Año de publicación: ");
-                    año.add(sc.nextInt());
-                    while (año.getLast() < 0 ){
+                    int inputAño = sc.nextInt();
+                    sc.nextLine();
+                    
+                    while (inputAño < 0 ){
                         System.out.println("Dato incorrecto. Introduce el año de nuevo: ");
-                        año.add(sc.nextInt());
+                        inputAño = sc.nextInt();
+                        sc.nextLine();
                     }
+                    año.add(inputAño);
                     System.out.println();
                     
                     System.out.println("Precio: ");
-                    precio.add(sc.nextFloat());
-                    while (precio.getLast() < 0){
+                    float inputPrecio = sc.nextFloat();
+                    sc.nextLine();
+                    
+                    while (inputPrecio < 0){
                         System.out.println("Dato incorrecto. Introduce el precio de nuevo: ");
-                        precio.add(sc.nextFloat());
+                        inputPrecio = sc.nextFloat();
+                        sc.nextLine();
                     }
+                    precio.add(inputPrecio);
                 }   
                 if(opcion == 2){
                     for (int i = 0; i < titulo.size(); i++){
-                        
+                        System.out.println("------------------------------------");
                         System.out.println("Título: " + titulo.get(i));
                         System.out.println("Autor: " + autor.get(i));
-                        System.out.println("Año de publkicación: " + año.get(i));
+                        System.out.println("Año de publicación: " + año.get(i));
                         System.out.println("Precio: " + precio.get(i));
+                        System.out.println("------------------------------------");
                         System.out.println();
                     }
                     
                 }
                 if(opcion == 3){
-
+                    String buscar;
+                    int i = 0;
+                    boolean encontrado = false;
+                    
+                    System.out.println("Introduce el título que buscas: ");
+                    buscar = sc.nextLine();
+                    while (i < titulo.size()){
+                        if (titulo.get(i).equals(buscar)){
+                            System.out.println(titulo.get(i));
+                            System.out.println(autor.get(i));
+                            System.out.println(año.get(i));
+                            System.out.println(precio.get(i));
+                            encontrado = true;
+                            break;
+                        }
+                        i++;
+                    } 
+                    if (!encontrado){
+                        System.out.println("--------------------------------------------");
+                        System.out.println("El libro no esta en el inventario.");
+                        System.out.println("--------------------------------------------");
+                    }
                 }
                 if(opcion != 1 && opcion != 2 && opcion != 3 && opcion != 4){
                     System.out.println("--------------------------------------------");
                     System.out.println("ERROR. Introduce de nuevo la opcion deseada.");
                     System.out.println("--------------------------------------------");
                 }
-
             }while(opcion != 4);
 
 

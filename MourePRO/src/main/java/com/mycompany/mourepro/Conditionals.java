@@ -85,12 +85,61 @@ public class Conditionals {
         }*/
         // 7. Simula un sistema de notas: muestra "Sobresaliente", "Aprobado" o
         // "Suspenso" segÃºn la nota (0-100).
+        /*System.out.println("Dinos tu nota: ");
+        sc.nextInt();
+        if (nota < 50) {
+            System.out.println("Suspenso");
+        }
+        else if (nota >= 50 && nota < 90){
+            System.out.println("Aprobado");
+        }
+        else System.out.println("Sobresaliente");*/
 
         // 8. Escribe un programa que determine si puedes entrar al cine: debes tener al
         // menos 15 aÃ±os o ir acompaÃ±ado.
 
+        /*int edad;
+        System.out.println("¿Qué edad tienes?");
+        edad = sc.nextInt();
+        sc.nextLine();
+
+        String acompa;
+
+        if(edad < 15){
+            System.out.println("¿Vas acompañado? (si/no): ");
+            acompa = sc.nextLine();
+            if (acompa.equalsIgnoreCase("si")){
+                System.out.println("Adelante, disfrute de la película.");
+            }
+            else System.out.println("Lo sentimos, no puedes pasar");
+        }
+        else System.out.println("Adelante, disfrute de la película.");*/
+
         // 9. Crea un programa que diga si una letra es vocal o consonante.
+        /*System.out.println("Introduce una letra: ");
+        String letra = sc.nextLine();
+
+        if (letra.equalsIgnoreCase("a") || letra.equalsIgnoreCase("e") ||
+                letra.equalsIgnoreCase("i") || letra.equalsIgnoreCase("o") ||
+                letra.equalsIgnoreCase("u")) {
+            System.out.println("La letra es vocal.");
+        }
+        else System.out.println("La letra es consonante.");*/
 
         // 10. Usa tres variables a, b, c y muestra cuÃ¡l es el mayor de las tres.
+        int a = 34;
+        int b = 23;
+        int c = 21;
+
+        if (a > b && a > c){
+            System.out.println("La variable mayor es la a");
+        }
+        else if (b > c) {
+            System.out.println("La variable mayor es la b");
+        }
+        else System.out.println("La variable mayor es la c");
+
+
+
     }
 }

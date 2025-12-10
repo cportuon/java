@@ -81,10 +81,12 @@
                     buscar = sc.nextLine();
                     while (i < titulo.size()){
                         if (titulo.get(i).equals(buscar)){
-                            System.out.println(titulo.get(i));
-                            System.out.println(autor.get(i));
-                            System.out.println(año.get(i));
-                            System.out.println(precio.get(i));
+                            System.out.println("--------------------------------------------");
+                            System.out.println("Título: " + titulo.get(i));
+                            System.out.println("Autor: " + autor.get(i));
+                            System.out.println("Año de publicación: " + año.get(i));
+                            System.out.println("Precio: " + precio.get(i));
+                            System.out.println("--------------------------------------------");
                             encontrado = true;
                             break;
                         }

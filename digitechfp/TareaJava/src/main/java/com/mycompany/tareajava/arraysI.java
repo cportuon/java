@@ -14,7 +14,33 @@ public class arraysI {
         Se crea otro array, pidiendo el número de posiciones por pantalla. Los valores se cargan con un
         bucle for.
         Crear un tercer array que contiene, los datos de los dos arrays. */
-
+        Scanner sc = new Scanner(System.in);
+        int positions1;
+        System.out.println("Número de posiciones de nuestro array:");
+        positions1 = sc.nextInt();
+        int[] array1 = new int[positions1];
+        for (int i = 0; i < positions1; i++ ){
+            System.out.println("Introduce un número");
+            array1[i] = sc.nextInt();
+        }
+        int positions2;
+        System.out.println("Número de posiciones de nuestro array:");
+        positions2 = sc.nextInt();
+        int[] array2 = new int[positions2];
+        for (int i = 0; i < positions2; i++ ){
+            System.out.println("Introduce un número");
+            array2[i] = sc.nextInt();
+        }
+        int[] array3 = new int[positions1 + positions2];
+        for (int i = 0; i < positions1; i++){
+            array3[i] = array1[i];
+        }
+        for (int i = 0; i < positions2; i++){
+            array3[i + array1.length] = array2[i];
+        }
+        for (int i = 0; i < array3.length; i++){
+            System.out.println(array3[i]);
+        }
 
         /* 3. Crear un array de caracteres, con los siguientes valores: a,e,r,t,y,u. Crea un array con datos
         enteros con valores del 1 al 6.

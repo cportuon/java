@@ -69,10 +69,26 @@ public class arraysI {
 
         /* 5.Diseñar un array con las calificaciones de 6 asignaturas de un alumno que se piden por
         pantalla. Se debe calcular su nota media final.*/
-        int[] arrayGrade = new int[6];
+        Scanner sc = new Scanner(System.in);
+        double[] arrayGrade = new double[6];
+        double media = 0;
         for (int i = 0; i < arrayGrade.length; i++){
-            System.out.println("Introduce la nota de la " + i + "asignatura: ");
-            arrayGrade[i] = sc.nextInt();
+            System.out.println("Introduce la nota de la " + (i+1) + " asignatura: ");
+            arrayGrade[i] = sc.nextDouble();
+            media += (arrayGrade[i]) / 6;
         }
+        if (media < 5){
+            System.out.println(media + " SUSPENSO");
+        }
+        else if (media >= 5){
+            System.out.println(media + " APROBADO");
+        }
+        else if(media < 5 && media <= 6.5){
+            System.out.println(media + " BIEN");
+        }
+        else if(media > 6.5 && media <= 8.5){
+            System.out.println(media + " NOTABLE");
+        }
+        else System.out.println(media + " SOBRESALIENTE");
     }
 }

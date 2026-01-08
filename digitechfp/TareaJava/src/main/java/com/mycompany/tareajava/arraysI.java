@@ -69,7 +69,6 @@ public class arraysI {
 
         /* 5.Diseñar un array con las calificaciones de 6 asignaturas de un alumno que se piden por
         pantalla. Se debe calcular su nota media final.*/
-        Scanner sc = new Scanner(System.in);
         double[] arrayGrade = new double[6];
         double media = 0;
         for (int i = 0; i < arrayGrade.length; i++){

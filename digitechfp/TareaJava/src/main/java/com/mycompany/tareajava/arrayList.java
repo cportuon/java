@@ -9,8 +9,11 @@ public class arrayList {
         ciudades.add("Madrid");
         ciudades.add("Sevilla");
         ciudades.add("Santander");
-        System.out.println(ciudades.getFirst());
-
-
+        System.out.println("Tamaño de la lista: " + ciudades.size());
+        System.out.println("Contenido del primer valor: " + ciudades.get(2));
+        System.out.println(ciudades.removeFirst());
+        System.out.println("Contiene ''Madrid'' la lista: " + ciudades.contains("Madrid"));
+        ciudades.clear();
+        System.out.println("La lista está vacía: " + ciudades.isEmpty());
      }
 }
